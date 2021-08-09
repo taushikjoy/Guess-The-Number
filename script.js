@@ -1,4 +1,12 @@
+let check = document.querySelector('.check');
+let number = document.querySelector('#number')
+let message = document.querySelector('.message')
 
+ let joy = () =>  message.textContent = `you guessed ${number.value}`
+
+
+
+check.addEventListener('click' , joy)
 
 
 
