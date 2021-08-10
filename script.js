@@ -10,7 +10,13 @@ const put = document.querySelector('.guess');
 
 const check = document.querySelector('.check');
 
+const again = document.querySelector('.again')
+
+
+
 const message = document.querySelector('.message');
+
+const highscoree = document.querySelector('.highscore');
 
 //  document.querySelector('.score-div').textContent = secretNo;
 
@@ -18,14 +24,15 @@ const message = document.querySelector('.message');
 check.addEventListener('click' , function() {
 
   if(!put.value) {
-    message.textContent = "there is no number!"
+    message.textContent = "🚨 there is no number!"
   }
 
   else if (put.value == secretNo) {
 
-    message.textContent = "correct"
-    document.querySelector('.highscore').textContent = score;
+    message.textContent = "✅ correct"
+    highscoree.textContent = score;
      document.querySelector('body').style.backgroundColor = '#60b347';
+     document.querySelector('.score-div').textContent = secretNo;
 
   }
   else if (put.value < secretNo) {
@@ -43,6 +50,13 @@ check.addEventListener('click' , function() {
 
 }
 );
+
+again.addEventListener('click' , function() {
+
+  location.reload();
+  return false;
+
+} )
 
 // let number = document.querySelector('#number');
 

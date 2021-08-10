@@ -24,6 +24,7 @@ header {
 color: #000;
 background-color: #fff;
 cursor: pointer;
+font-family: inherit;
 }
 
 .main-p {
@@ -84,6 +85,7 @@ main {
   padding-right: 1rem;
   padding-left: 8rem;
   font-size: 2rem;
+  font-family: inherit;
 }
 .btn{
   height: 4.5rem;
@@ -92,6 +94,7 @@ main {
   color: black;
   margin-left: 6rem;
   cursor: pointer;
+  font-family: inherit;
 
 }
 .right{
